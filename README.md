@@ -3,6 +3,10 @@
 Insert and extract phonetic transcriptions from CLAN files
 
 
+## dependencies
+
+This package depends on [pyclan](https://github.com/SeedlingsBabylab/pyclan)
+
 
 ## usage
 
