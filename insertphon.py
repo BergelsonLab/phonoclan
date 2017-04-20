@@ -1,10 +1,12 @@
 import pyclan as pc
 import sys
+import os
 
 
-def insert_pho(input, out):
+def insert_pho(input):
     clan_file = pc.ClanFile(input)
 
+    out = os.path.basename(input)[:5]+"_with_pho.cha"
     results = clan_file.get_with_speaker("CHI")
 
     inserted_lines = []
@@ -20,6 +22,5 @@ def insert_pho(input, out):
 if __name__ == "__main__":
 
     in_file = sys.argv[1]
-    out_file = sys.argv[2]
 
-    insert_pho(in_file, out_file)
+    insert_pho(in_file)

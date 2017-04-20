@@ -22,6 +22,9 @@ speaker code is CHI. If there is more than one CHI annotated word on a
 single line, there will still only be a single %pho line following it.
 You should separate the multiple CHI phonetic transcriptions by a space.
 
+If your input file is 44_17_final.cha, the output will be called
+44_17_with_pho.cha.
+
 
 #### extract %pho annotations:
 
